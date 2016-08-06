@@ -22,6 +22,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let viewController = ViewController()
         let rootController = UINavigationController(rootViewController: viewController)
         window?.rootViewController = rootController
+        
+        UINavigationBar.appearance().barTintColor = UIColor.orangeColor()
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        application.statusBarStyle = .LightContent
+        
         return true
     }
 
